@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag of Sweden</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0; /* Get the background with the right contrast */
+    }
+
+    .flag {
+      position: relative;
+      background-color: blue;
+      height: 600px;
+      width: 900px;
+      animation: wave 2s ease-in-out infinite; /* Make the little waving  */
+    }
+
+    .frame1 {
+      background-color: yellow;
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      top: 250px; 
+    }
+
+    .frame2 {
+      background-color: yellow;
+      height: 100%;
+      width: 100px;
+      position: absolute;
+      left: 300px;
+    }
+
+    /* Keyframe animation for the moving effects */
+    @keyframes wave {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px); 
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <div class="frame1"></div>
+    <div class="frame2"></div>
+  </div>
+</body>
+
+</html>
